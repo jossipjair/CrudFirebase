@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarMascota">
+
+    <TextView
+        android:id="@+id/tvNombreMascota"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:gravity="center_horizontal"
+        android:text="Nombre Mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etNombreMascota"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvNombreMascota"
+        android:hint="Ingrese nombre"
+        android:inputType="textCapCharacters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvEdadMascota"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/etNombreMascota"
+        android:text="Edad Mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etEdadMascota"
+        android:layout_below="@+id/tvEdadMascota"
+        android:hint="Ingrese edad"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvColorMascota"
+        android:text="Color Mascota"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etEdadMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etColorMascota"
+        android:layout_below="@+id/tvColorMascota"
+        android:hint="Ingrese color"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAgregarRegistroMascota"
+        android:text="AGREGAR MASCOTA"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etColorMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
